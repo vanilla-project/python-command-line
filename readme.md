@@ -39,6 +39,19 @@ This allows us to _spy_ on the output of it.
 We want to avoid printing anything to the screen while running the tests.
 Injecting a test double in this instance is a nice way to isolate our application from the command line.
 
+At the bottom of the executable main module [`sample/main.py`](sample/main.py) we inject `sys.stdout`, which is Python's variable for its standard output.
+
+
+## Running the Application
+
+To run the application execute the main module `sample.main`.
+You should see the text &ldquo;Python Example&rdquo; being printed.
+
+```
+$: python -m sample.main
+Python Example
+```
+
 
 ## Built With
 

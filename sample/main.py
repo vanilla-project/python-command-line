@@ -1,3 +1,4 @@
+import sys
 from sample.example import Example
 
 
@@ -8,5 +9,9 @@ class Main:
     def run(self):
         example = Example()
 
-        self._stdout.write(example.greeting())
+        self._stdout.write(f"{example.greeting()}\n")
+
+
+if __name__ == "__main__":
+    Main(sys.stdout).run()
 
